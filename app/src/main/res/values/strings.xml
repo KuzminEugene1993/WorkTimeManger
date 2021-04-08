@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TimeManager</string>
+    <string name="startDay">Введите время прихода</string>
+    <string name="endDay">Введите время ухода</string>
+    <string name="startDayHint">ЧЧ:ММ</string>
+    <string name="erase">Очистить для нового месяца</string>
+    <string name="calculate">Посчитать</string>
+</resources>

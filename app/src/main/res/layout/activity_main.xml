@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity"
+    >
+<ImageView
+    android:id="@+id/iv_logo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:src="@drawable/logo"
+    android:adjustViewBounds="true">
+
+</ImageView>
+
+<TextView
+    android:id="@+id/tv_startDay"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/iv_logo"
+    android:text="@string/startDay"
+    android:layout_centerHorizontal="true"
+    android:textSize="30sp">
+</TextView>
+
+<EditText
+    android:id="@+id/et_startDay"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/tv_startDay"
+    android:layout_centerHorizontal="true"
+    android:textSize="70sp"
+    android:inputType="time"
+    android:gravity="center"
+    android:maxLength="5"
+    android:background="@drawable/edit_text_frame"
+    android:hint="@string/startDayHint"
+    android:digits="0123456789:"
+    >
+</EditText>
+
+<TextView
+    android:id="@+id/tv_endDay"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/et_startDay"
+    android:text="@string/endDay"
+    android:layout_centerHorizontal="true"
+    android:textSize="30sp">
+</TextView>
+
+<EditText
+    android:id="@+id/et_endDay"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/tv_endDay"
+    android:layout_centerHorizontal="true"
+    android:textSize="70sp"
+    android:inputType="time"
+    android:gravity="center"
+    android:maxLength="5"
+    android:background="@drawable/edit_text_frame"
+    android:hint="@string/startDayHint"
+    android:digits="0123456789:"
+    >
+</EditText>
+
+<Button
+    android:id="@+id/b_calculate"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/et_endDay"
+    android:layout_centerHorizontal="true"
+    android:text="@string/calculate"
+    android:textSize="20sp">
+
+</Button>
+
+<TextView
+    android:id="@+id/tv_result"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginTop="20dp"
+    android:layout_above="@id/b_erase"
+    android:gravity="center"
+    android:textSize="30sp"
+    android:background="@drawable/edit_text_frame"
+    >
+
+</TextView>
+
+<Button
+    android:id="@+id/b_erase"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:text="@string/erase"
+    android:textSize="20sp"
+    android:gravity="center"
+    >
+</Button>
+
+
+
+
+</RelativeLayout>
